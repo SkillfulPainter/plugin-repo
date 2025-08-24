@@ -4,7 +4,7 @@
     "manifest": {
       "manifest_version": 1,
       "name": "群聊禁言管理插件 (Mute Plugin)",
-      "version": "4.0.0",
+      "version": "4.0.1",
       "description": "群聊禁言管理插件，提供智能禁言功能",
       "author": {
         "name": "SengokuCola",
@@ -14,6 +14,8 @@
       "host_application": {
         "min_version": "0.10.0"
       },
+      "homepage_url": "https://github.com/SengokuCola/MutePlugin",
+      "repository_url": "https://github.com/SengokuCola/MutePlugin",
       "keywords": [
         "mute",
         "ban",
