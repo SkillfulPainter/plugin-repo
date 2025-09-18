@@ -976,7 +976,7 @@
           {
             "type": "action",
             "name": "emoji",
-            "description": "发送表情包辅助表达���绪"
+            "description": "发送表情包辅助表达情绪"
           }
         ]
       }
