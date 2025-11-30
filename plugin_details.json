@@ -4107,9 +4107,9 @@
           "config_schema": {
             "plugin": {
               "name": "reminder_plugin",
-              "version": "1.0.0",
+              "version": "1.0.2",
               "enabled": true,
-              "config_version": "1.0"
+              "config_version": "1.1"
             },
             "components": {
               "action_set_reminder_enable": true,
