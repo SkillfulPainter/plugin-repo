@@ -1479,7 +1479,7 @@
         ],
         "features": [
           "多种音色支持（小新、妲己、酥心御姐等）",
-          "双模式触发（智能触发和��动触发）",
+          "双模式触发（智能触���和手动触发）",
           "音色别名映射，方便用户使用",
           "仅群聊可用，确保使用场景合适",
           "完善的错误处理和日志记录",
@@ -1519,7 +1519,7 @@
         "爹系男友": "lucy-voice-m101",
         "暖心姐姐": "lucy-voice-female2",
         "温柔妹妹": "lucy-voice-f36",
-        "书香少女": "lucy-voice-f34"
+        "书香少���": "lucy-voice-f34"
       },
       "configuration": {
         "config_file": "config.toml",
@@ -1972,7 +1972,7 @@
           {
             "type": "tool",
             "name": "get_team_info",
-            "description": "���取战队信息和排名"
+            "description": "获取战队信息和排名"
           },
           {
             "type": "tool",
