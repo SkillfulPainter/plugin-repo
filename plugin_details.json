@@ -1479,7 +1479,7 @@
         ],
         "features": [
           "多种音色支持（小新、妲己、酥心御姐等）",
-          "双模式触发（智能触���和手动触发）",
+          "双模式触发（智能触发和��动触发）",
           "音色别名映射，方便用户使用",
           "仅群聊可用，确保使用场景合适",
           "完善的错误处理和日志记录",
@@ -1519,7 +1519,7 @@
         "爹系男友": "lucy-voice-m101",
         "暖心姐姐": "lucy-voice-female2",
         "温柔妹妹": "lucy-voice-f36",
-        "书香少���": "lucy-voice-f34"
+        "书香少女": "lucy-voice-f34"
       },
       "configuration": {
         "config_file": "config.toml",
@@ -1812,7 +1812,7 @@
     "manifest": {
       "manifest_version": 1,
       "name": "麦麦联网插件（search plugin）",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "description": "支持多个搜索引擎的网络搜索以及聚合翻译搜索以及图片搜索插件，具有自动降级功能。",
       "author": {
         "name": "晴空",
@@ -1972,7 +1972,7 @@
           {
             "type": "tool",
             "name": "get_team_info",
-            "description": "获取战队信息和排名"
+            "description": "���取战队信息和排名"
           },
           {
             "type": "tool",
