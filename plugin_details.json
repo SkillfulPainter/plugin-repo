@@ -399,7 +399,7 @@
     "manifest": {
       "manifest_version": 1,
       "name": "统一TTS语音合成插件",
-      "version": "3.2.2",
+      "version": "3.2.3",
       "description": "统一TTS语音合成插件，整合AI Voice、GSV2P、GPT-SoVITS、豆包语音、CosyVoice五种后端引擎，提供灵活的语音合成能力。",
       "author": {
         "name": "靓仔",
@@ -637,7 +637,7 @@
     "manifest": {
       "manifest_version": 1,
       "name": "娱乐插件",
-      "version": "1.0.0",
+      "version": "1.0.3",
       "description": "整合了看看腿、新闻、音乐、AI绘图等娱乐功能的统一插件，提供图片、新闻资讯、音乐点歌、AI生成图片等多种娱乐服务",
       "author": {
         "name": "靓仔",
@@ -697,7 +697,7 @@
           },
           {
             "name": "play_music",
-            "description": "搜索并播放指定歌曲。当用户想听音乐、点歌或推荐歌曲时使用���工具"
+            "description": "搜索并播放指定歌曲。当用户想听音乐、点歌或推荐歌曲时使用此工具"
           },
           {
             "name": "ai_draw",
@@ -795,7 +795,8 @@
           "music_enabled": true,
           "ai_draw_enabled": true
         }
-      }
+      },
+      "id": "靓仔.music_plugin"
     }
   },
   {
@@ -1242,7 +1243,7 @@
     "manifest": {
       "manifest_version": 1,
       "name": "Maizone（麦麦空间）",
-      "version": "2.4.10",
+      "version": "2.4.11",
       "description": "让你的麦麦发QQ空间，评论，点赞",
       "author": {
         "name": "internetsb",
