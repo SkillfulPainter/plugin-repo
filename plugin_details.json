@@ -3136,26 +3136,6 @@
     }
   },
   {
-    "id": "Kristen23557.Werewolves-Master-Plugin",
-    "manifest": {
-      "manifest_version": 1,
-      "name": "MaiBot-Tarots-Plugin-REBORN",
-      "version": "1.0.0",
-      "description": "让麦麦帮你开展惊险刺激（并不）的狼人杀游戏！",
-      "host_application": {
-        "min_version": "0.10.0"
-      },
-      "author": {
-        "name": "KArabella",
-        "url": "https://github.com/Kristen23557"
-      },
-      "license": "MPL-2.0",
-      "homepage_url": "https://github.com/Kristen23557",
-      "repository_url": "https://github.com/Kristen23557/Werewolves-Master-Plugin",
-      "default_locale": "CN"
-    }
-  },
-  {
     "id": "TAIY2020.group_muter_plugin",
     "manifest": {
       "manifest_version": 1,
