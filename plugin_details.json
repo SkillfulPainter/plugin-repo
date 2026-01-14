@@ -1243,7 +1243,7 @@
     "manifest": {
       "manifest_version": 1,
       "name": "Maizone（麦麦空间）",
-      "version": "2.4.12",
+      "version": "2.5.0",
       "description": "让你的麦麦发QQ空间，评论，点赞",
       "author": {
         "name": "internetsb",
@@ -1318,20 +1318,17 @@
         "插件"
       ],
       "categories": [
-        "Fun",
-        "Interaction",
-        "Automation"
+        "Entertainment & Interaction"
       ],
       "default_locale": "zh-CN",
-      "locales_path": "_locales",
       "plugin_info": {
         "is_built_in": false,
         "plugin_type": "chat",
         "components": [
           {
             "type": "action",
-            "name": "ActivePokeAction",
-            "description": "主动模式下，插件可以自动戳一戳群成员，增强群聊互动体验"
+            "name": "PokeAction",
+            "description": "在合适场景下对目标用户执行戳一戳互动"
           }
         ],
         "features": [
@@ -2525,7 +2522,7 @@
       "manifest_version": 1,
       "name": "repeat_plugin",
       "display_name": "复读插件",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "description": "一个简单的复读插件(和上面的复读插件不一样，无需更改代码)，可以检测群聊中连续重复的消息并自动进行复读，为群聊增添乐趣。",
       "author": {
         "name": "何夕",
@@ -2534,8 +2531,7 @@
       },
       "license": "MIT",
       "host_application": {
-        "min_version": "0.10.1",
-        "max_version": "0.11.6 "
+        "min_version": "0.10.1"
       },
       "entry": "plugin.py",
       "homepage_url": "https://github.com/Heximiao/repeat_plugin",
