@@ -2827,7 +2827,7 @@
     "manifest": {
       "manifest_version": 1,
       "name": "Gemini 绘图",
-      "version": "1.7.1",
+      "version": "1.7.2",
       "description": "使用 Google Gemini API或着其他第三方平台提供的绘图服务，根据图片和提示词生成新图片。（现已支持视频生成）",
       "author": {
         "name": "sakura桜花",
@@ -2840,13 +2840,10 @@
       "homepage_url": "https://github.com/namchengwuqiu/gemini_drawer",
       "repository_url": "https://github.com/namchengwuqiu/gemini_drawer",
       "keywords": [
-        "gemini",
-        "image",
-        "drawing",
-        "ai",
+        "ai画图",
         "绘图",
-        "画图",
-        "视频生成"
+        "ai视频生成",
+        "image"
       ],
       "categories": [
         "Utilities",
