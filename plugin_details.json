@@ -859,7 +859,7 @@
         "features": [
           "智能LLM判定生成时机",
           "高质量AI图片生成",
-          "结果缓存机制",
+          "���果缓存机制",
           "多种图片尺寸支持",
           "完整的错误处理"
         ]
@@ -2826,7 +2826,7 @@
     "manifest": {
       "manifest_version": 1,
       "name": "Gemini 绘图",
-      "version": "1.7.8",
+      "version": "1.7.9",
       "description": "使用 Google Gemini API或着其他第三方平台提供的绘图服务，根据图片和提示词生成新图片。（现已支持视频生成）",
       "author": {
         "name": "sakura桜花",
