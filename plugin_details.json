@@ -1799,7 +1799,7 @@
     "manifest": {
       "manifest_version": 1,
       "name": "麦麦发 B 站视频",
-      "version": "1.3.5",
+      "version": "1.3.6",
       "description": "让麦麦解析 B 站视频链接并发送，群聊私聊都可用",
       "author": {
         "name": "XinxInxiN0",
@@ -2826,7 +2826,7 @@
     "manifest": {
       "manifest_version": 1,
       "name": "Gemini 绘图",
-      "version": "1.7.9",
+      "version": "1.8.0",
       "description": "使用 Google Gemini API或着其他第三方平台提供的绘图服务，根据图片和提示词生成新图片。（现已支持视频生成）",
       "author": {
         "name": "sakura桜花",
