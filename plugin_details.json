@@ -1620,7 +1620,7 @@
       "manifest_version": 1,
       "name": "B站动态推送",
       "version": "1.5.0",
-      "description": "适用于MaiBot的B站动态订阅插件，支持多UP主、多群组推送，自动解析图文、视频封面及转发动态",
+      "description": "适用于MaiBot的B站动态订阅插件",
       "author": {
         "name": "白狐",
         "url": "https://github.com/whitefox20011120"
@@ -1630,7 +1630,7 @@
         "min_version": "0.10.0"
       },
       "homepage_url": "https://github.com/whitefox20011120/bilibili_dynamic_push_plugin",
-      "repository_url": "",
+      "repository_url": "https://github.com/whitefox20011120/bilibili_dynamic_push_plugin",
       "keywords": [
         "bilibili",
         "动态订阅",
@@ -1641,15 +1641,13 @@
       "categories": [
         "Utility Tools"
       ],
-      "default_locale": "zh-CN",
       "plugin_info": {
         "is_built_in": false,
-        "plugin_type": "utility",
         "components": [
           {
             "type": "command",
             "name": "bili_control",
-            "description": "B站订阅插件"
+            "description": "B站订阅"
           }
         ]
       },
@@ -2692,7 +2690,7 @@
     "manifest": {
       "manifest_version": 1,
       "name": "Gemini 绘图",
-      "version": "1.9.0",
+      "version": "1.9.1",
       "description": "使用 Google Gemini API或着其他第三方平台提供的绘图服务，根据图片和提示词生成新图片。（现已支持视频生成）",
       "author": {
         "name": "sakura桜花",
