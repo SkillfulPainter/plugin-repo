@@ -3037,7 +3037,7 @@
     "manifest": {
       "manifest_version": 1,
       "name": "AnimeTrace 图片识别插件",
-      "version": "2.2.0",
+      "version": "2.3.0",
       "description": "接收图片并调用 AnimeTrace 识别，返回文本结果到 QQ",
       "author": {
         "name": "薄暝&晴空",
@@ -3527,7 +3527,7 @@
             "name": "chat_summary",
             "description": "生成聊天记录总结",
             "pattern": "/summary",
-            "usage": "/summary [今天|昨天] 或 /summary @用户名/QQ号 [今天|昨天]"
+            "usage": "/summary [今天|昨天] 或 /summary @用户名/QQ号 [今天|��天]"
           },
           {
             "type": "event_handler",
