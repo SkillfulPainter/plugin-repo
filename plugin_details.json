@@ -514,7 +514,7 @@
             "endpoint": "ModelScope Gradio API",
             "authentication": "无需认证（公开Gradio接口）",
             "limitations": "依赖ModelScope服务可用性",
-            "features": "3秒声音克隆���17种方言支持、情感语速控制、自然语言指令"
+            "features": "3��声音克隆、17种方言支持、情感语速控制、自然语言指令"
           }
         }
       },
