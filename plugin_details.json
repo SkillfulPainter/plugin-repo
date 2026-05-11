@@ -1153,53 +1153,67 @@
   {
     "id": "internetsb.Maizone",
     "manifest": {
-      "manifest_version": 1,
+      "manifest_version": 2,
+      "id": "internetsb.maizone",
+      "version": "3.0.0",
       "name": "Maizone（麦麦空间）",
-      "version": "2.5.0",
-      "description": "让你的麦麦发QQ空间，评论，点赞",
+      "description": "让麦麦阅读、评论、点赞、发送QQ空间",
       "author": {
         "name": "internetsb",
         "url": "https://github.com/internetsb"
       },
       "license": "MIT",
+      "urls": {
+        "repository": "https://github.com/internetsb/Maizone"
+      },
       "host_application": {
-        "min_version": "0.10.3"
+        "min_version": "1.0.0",
+        "max_version": "1.99.99"
       },
-      "homepage_url": "https://github.com/internetsb/Maizone",
-      "repository_url": "https://github.com/internetsb/Maizone",
-      "keywords": [
-        "Qzone",
-        "qq空间",
-        "说说",
-        "动态",
-        "评论",
-        "点赞"
-      ],
-      "categories": [
-        "Content Generation",
-        "External Integration"
-      ],
-      "plugin_info": {
-        "is_built_in": false,
-        "components": [
-          {
-            "type": "action",
-            "name": "send_feed",
-            "description": "根据指定主题发送一条说说"
-          },
-          {
-            "type": "action",
-            "name": "read_feed",
-            "description": "读取指定好友最近的说说，并评论点赞"
-          },
-          {
-            "type": "command",
-            "name": "send_feed",
-            "description": "根据指定主题发送一条说说"
-          }
-        ]
+      "sdk": {
+        "min_version": "1.0.0",
+        "max_version": "2.99.99"
       },
-      "id": "internetsb.Maizone"
+      "dependencies": [
+        {
+          "type": "plugin",
+          "id": "maibot-team.napcat-adapter",
+          "version_spec": ">=0.1.0"
+        },
+        {
+          "type": "python_package",
+          "name": "bs4",
+          "version_spec": ">=0.0.1"
+        },
+        {
+          "type": "python_package",
+          "name": "json5",
+          "version_spec": ">=0.0.1"
+        },
+        {
+          "type": "python_package",
+          "name": "requests",
+          "version_spec": ">=0.0.1"
+        },
+        {
+          "type": "python_package",
+          "name": "httpx",
+          "version_spec": ">=0.0.1"
+        }
+      ],
+      "capabilities": [
+        "send.text",
+        "llm.generate",
+        "config.get",
+        "llm.get_available_models",
+        "message.get_recent",
+        "api.call",
+        "emoji.get_by_description",
+        "database.get"
+      ],
+      "i18n": {
+        "default_locale": "zh-CN"
+      }
     }
   },
   {
@@ -1628,85 +1642,73 @@
   {
     "id": "whitefox20011120.bilibili_dynamic_push_plugin",
     "manifest": {
-      "manifest_version": 1,
+      "manifest_version": 2,
+      "version": "2.1.0",
       "name": "B站动态推送",
-      "version": "1.6.0",
-      "description": "适用于MaiBot的B站动态订阅插件（maisaka版请去仓库r-dev分支）",
+      "description": "适用于MaiBot的B站动态订阅与直播状态自动推送插件（旧版请去仓库分支）",
       "author": {
         "name": "白狐",
         "url": "https://github.com/whitefox20011120"
       },
       "license": "MIT",
-      "host_application": {
-        "min_version": "0.10.0"
+      "urls": {
+        "repository": "https://github.com/whitefox20011120/bilibili_dynamic_push_plugin"
       },
-      "homepage_url": "https://github.com/whitefox20011120/bilibili_dynamic_push_plugin",
-      "repository_url": "https://github.com/whitefox20011120/bilibili_dynamic_push_plugin",
-      "keywords": [
-        "bilibili",
-        "动态订阅",
-        "推送",
-        "监控",
-        "UP主"
+      "host_application": {
+        "min_version": "1.0.0",
+        "max_version": "1.99.99"
+      },
+      "sdk": {
+        "min_version": "2.0.0",
+        "max_version": "2.99.99"
+      },
+      "dependencies": [],
+      "capabilities": [
+        "config.get",
+        "api.call"
       ],
-      "categories": [
-        "Utility Tools"
-      ],
-      "plugin_info": {
-        "is_built_in": false,
-        "components": [
-          {
-            "type": "command",
-            "name": "bili_control",
-            "description": "B站订阅"
-          }
+      "i18n": {
+        "default_locale": "zh-CN",
+        "locales_path": "_locales",
+        "supported_locales": [
+          "zh-CN"
         ]
       },
-      "python_dependencies": [
-        "bilibili-api-python>=16.2.0",
-        "aiohttp"
-      ],
-      "id": "whitefox20011120.bilibili_dynamic_push_plugin"
+      "id": "whitefox.bilibili-dynamic-push"
     }
   },
   {
     "id": "XinxInxiN0.bilibili_video_sender_plugin",
     "manifest": {
-      "manifest_version": 1,
+      "manifest_version": 2,
+      "id": "xinxinxin0.bilibili-video-sender",
+      "version": "2.0.1",
       "name": "麦麦发 B 站视频",
-      "version": "1.4.3",
       "description": "让麦麦解析 B 站视频链接并发送，群聊私聊都可用",
       "author": {
         "name": "XinxInxiN0",
         "url": "https://github.com/XinxInxiN0"
       },
       "license": "MIT",
+      "urls": {
+        "repository": "https://github.com/XinxInxiN0/bilibili_video_sender_plugin"
+      },
       "host_application": {
-        "min_version": "0.9.0"
+        "min_version": "1.0.0",
+        "max_version": "2.0.0"
       },
-      "homepage_url": "https://github.com/XinxInxiN0/bilibili_video_sender_plugin",
-      "repository_url": "https://github.com/XinxInxiN0/bilibili_video_sender_plugin",
-      "keywords": [
-        "bilibili",
-        "video",
-        "send"
-      ],
-      "categories": [
-        "Multimedia",
-        "Utility Tools"
-      ],
-      "default_locale": "zh-CN",
-      "plugin_info": {
-        "is_built_in": false,
-        "plugin_type": "utility",
-        "components": [],
-        "features": [
-          "自动识别 B 站链接",
-          "发送视频文件",
-          "支持 b23.tv 短链"
-        ]
+      "sdk": {
+        "min_version": "2.3.0",
+        "max_version": "2.99.0"
       },
-      "id": "XinxInxiN0.bilibili_video_sender_plugin"
+      "capabilities": [
+        "send.text",
+        "send.custom",
+        "config.get"
+      ],
+      "i18n": {
+        "default_locale": "zh-CN"
+      }
     }
   },
   {
