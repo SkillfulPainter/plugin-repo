@@ -525,7 +525,7 @@
             "endpoint": "ModelScope Gradio API",
             "authentication": "无需认证（公开Gradio接口）",
             "limitations": "依赖ModelScope服务可用性",
-            "features": "3��声音克隆、17种方言支持、情感语速控制、自然语言指令"
+            "features": "3秒声音克隆���17种方言支持、情感语速控制、自然语言指令"
           }
         }
       },
@@ -1682,7 +1682,7 @@
     "manifest": {
       "manifest_version": 2,
       "id": "xinxinxin0.bilibili-video-sender",
-      "version": "2.0.2",
+      "version": "2.0.3",
       "name": "麦麦发 B 站视频",
       "description": "让麦麦解析 B 站视频链接并发送，群聊私聊都可用",
       "author": {
