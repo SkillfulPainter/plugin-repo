@@ -2914,7 +2914,7 @@
     "id": "custom_commands_plugin",
     "manifest": {
       "manifest_version": 2,
-      "version": "2.2.5",
+      "version": "2.4.2",
       "name": "自定义命令插件 | CustomCommands Plugin",
       "description": "一个允许你通过聊天命令动态添加、删除、列出和触发自定义回复的强大插件，支持群组数据隔离与自定义分组映射。",
       "author": {
@@ -3108,7 +3108,7 @@
     "id": "TAIY2020.group_muter_plugin",
     "manifest": {
       "manifest_version": 2,
-      "version": "2.1.0",
+      "version": "2.2.1",
       "name": "群聊静音插件 | GroupMuter Plugin",
       "description": "一个允许管理员通过聊天命令，让麦麦在指定群聊中临时进入“静音状态”（闭嘴）的群组管理插件。",
       "author": {
