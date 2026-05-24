@@ -3631,159 +3631,42 @@
   {
     "id": "xuqian13.autonomous_planning_plugin",
     "manifest": {
-      "manifest_version": 1,
-      "name": "麦麦自主规划插件",
-      "version": "3.0.0",
-      "description": "让麦麦具备自主规划能力，通过LLM智能生成符合人设的日常生活日程，支持定时生成和对话注入。v3.0全面优化：性能提升70%，稳定性提升50%。",
+      "manifest_version": 2,
+      "version": "4.0.0",
+      "name": "麦麦自主规划插件 v4",
+      "description": "让麦麦具备自主规划能力，通过 LLM 智能生成符合人设的日常生活日程。v4 全面基于 maibot_sdk 2.x 重写，支持新版 Host ↔ Runner 子进程架构，注入入口迁移到 HookHandler(maisaka.planner.before_request)。",
       "author": {
         "name": "靓仔",
         "url": "https://github.com/xuqian13"
       },
       "license": "AGPL-3.0",
-      "homepage_url": "",
-      "repository_url": "https://github.com/xuqian13/autonomous_planning_plugin",
-      "keywords": [
-        "自主规划",
-        "日程管理",
-        "目标管理",
-        "LLM",
-        "AI Agent",
-        "定时任务",
-        "人设",
-        "生活模拟",
-        "MaiCore"
-      ],
-      "categories": [
-        "AI",
-        "自动化",
-        "智能体",
-        "聊天增强",
-        "Utility"
-      ],
+      "urls": {
+        "repository": "https://github.com/xuqian13/autonomous_planning_plugin"
+      },
       "host_application": {
-        "min_version": "0.11.0",
+        "min_version": "1.0.0",
         "max_version": "1.0.0"
       },
-      "default_locale": "zh-CN",
-      "plugin_info": {
-        "is_built_in": false,
-        "plugin_type": "general",
-        "components": [
-          {
-            "type": "tool",
-            "name": "manage_goal",
-            "description": "目标管理工具，支持创建、查看、更新、暂停、恢复、完成、取消、删除目标"
-          },
-          {
-            "type": "tool",
-            "name": "generate_schedule",
-            "description": "日程生成工具，自动生成每日/每周/每月计划"
-          },
-          {
-            "type": "tool",
-            "name": "get_planning_status",
-            "description": "规划状态查询工具，查看活跃目标和执行历史"
-          },
-          {
-            "type": "tool",
-            "name": "apply_schedule",
-            "description": "日程应用工具，将日程项转换为可执行目标"
-          },
-          {
-            "type": "command",
-            "name": "planning_command",
-            "description": "规划管理命令，支持/plan status、/plan list、/plan clear、/plan delete等"
-          },
-          {
-            "type": "event_handler",
-            "name": "autonomous_planner",
-            "description": "自主规划事件处理器，定期清理过期目标"
-          },
-          {
-            "type": "event_handler",
-            "name": "schedule_inject_handler",
-            "description": "日程注入事件处理器，在LLM调用前注入当前日程信息"
-          }
-        ],
-        "features": [
-          "🚀 v3.0性能优化：数据库查询提升84%，缓存命中率提升42%",
-          "🛡️ 智能错误处理：配额超限自动识别，减少50%无效重试",
-          "🔒 安全输入验证：100%防御已知注入攻击",
-          "⚡ 并发优化：超时任务主动取消，生成速度提升50%",
-          "🎨 自定义Prompt：支持配置自定义提示词影响日程生成",
-          "🤖 基于Bot人设智能生成每日日程（8-15个活动）",
-          "⏰ 定时自动生成（默认每天00:30）",
-          "💬 对话中自然提到当前活动（如\"这会儿正吃午饭呢\"）",
-          "📊 支持文字和图片两种日程展示格式",
-          "🔄 多轮生成机制，可选启用提升质量",
-          "💾 LRU缓存优化，减少重复计算",
-          "🗑️ 自动清理过期目标（默认保留30天）",
-          "🌏 时区支持（默认Asia/Shanghai）",
-          "🧠 智能注入判断，仅在涉及时间的对话中注入"
-        ],
-        "dependencies": {
-          "python": [
-            "pillow"
-          ],
-          "system": [],
-          "plugins": []
-        }
+      "sdk": {
+        "min_version": "2.0.0",
+        "max_version": "2.99.99"
       },
-      "configuration": {
-        "config_file": "config.toml",
-        "auto_generate": true,
-        "sections": [
-          {
-            "name": "plugin",
-            "description": "插件基本配置（启用开关）"
-          },
-          {
-            "name": "autonomous_planning",
-            "description": "自主规划配置（清理间隔、保留天数）"
-          },
-          {
-            "name": "autonomous_planning.schedule",
-            "description": "日程生成配置（注入开关、生成参数、定时配置、缓存配置、自定义prompt）"
-          }
+      "dependencies": [],
+      "capabilities": [
+        "send.text",
+        "send.image",
+        "config.get",
+        "config.get_plugin",
+        "llm.generate",
+        "message.get_recent"
+      ],
+      "i18n": {
+        "default_locale": "zh-CN",
+        "supported_locales": [
+          "zh-CN"
         ]
       },
-      "usage_examples": [
-        {
-          "type": "conversation",
-          "description": "自动生成日程",
-          "example": "用户：帮我生成今天的日程\n机器人：[LLM基于人设生成8-15个活动并保存]"
-        },
-        {
-          "type": "command",
-          "description": "���看日程（文字格式）",
-          "example": "/plan status"
-        },
-        {
-          "type": "command",
-          "description": "查看日程（图片格式）",
-          "example": "/plan list"
-        },
-        {
-          "type": "command",
-          "description": "清理旧日程",
-          "example": "/plan clear"
-        },
-        {
-          "type": "command",
-          "description": "删除指定日程",
-          "example": "/plan delete 1"
-        },
-        {
-          "type": "inject",
-          "description": "对话中自然提到当前活动",
-          "example": "用户：在干嘛？\n机器人：这会儿正吃午饭呢~"
-        },
-        {
-          "type": "config",
-          "description": "自定义日程生成风格",
-          "example": "配置custom_prompt = \"今天想多运动，至少3小时运动时间\""
-        }
-      ]
+      "id": "xuqian13.autonomous-planning-plugin-v4"
     }
   },
   {
