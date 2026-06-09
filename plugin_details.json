@@ -411,7 +411,7 @@
       "manifest_version": 2,
       "version": "3.3.0",
       "name": "统一TTS语音合成插件 (Unified TTS Voice Plugin)",
-      "description": "统一TTS语音合成插件，整合 AI Voice、GSV2P、GPT-SoVITS、豆包语音、CosyVoice、小米 MiMo 六种后端引擎，提供灵活的语音合成能力。",
+      "description": "统一TTS语音合成插件，整合 AI Voice、GSV2P、GPT-SoVITS、豆包语音、CosyVoice、小米 MiMo、minimax 七种后端引擎，提供灵活的语音合成能力。",
       "author": {
         "name": "靓仔",
         "url": "https://github.com/xuqian13"
@@ -3191,44 +3191,35 @@
   {
     "id": "xuqian13.context_clear_plugin",
     "manifest": {
-      "manifest_version": 1,
-      "name": "context_clear_plugin",
-      "display_name": "麦麦失忆插件 (上下文清除插件升级版)",
-      "version": "1.5.0",
-      "description": "让麦麦选择性失忆,忘记之前的对话~ 支持忘记全部/最近/指定时间前的记忆,新增完全失忆模式和状态机确认机制 (改进自上下文清除插件)",
+      "manifest_version": 2,
+      "id": "xuqian13.amnesia_plugin",
+      "version": "1.6.0",
+      "name": "麦麦失忆插件",
+      "description": "让麦麦选择性失忆,忘记之前的对话~ 支持忘记全部/最近/指定时间前的记忆,完全失忆模式支持配置保留个人印象/黑话/统计数据",
       "author": {
         "name": "靓仔",
         "url": "https://github.com/xuqian13"
       },
       "license": "AGPL-v3.0",
+      "urls": {
+        "repository": "https://github.com/xuqian13/context_clear_plugin"
+      },
       "host_application": {
         "min_version": "0.11.0",
         "max_version": "1.0.0"
       },
-      "keywords": [
-        "失忆",
-        "amnesia",
-        "forget",
-        "记忆",
-        "断片",
-        "clear",
-        "context",
-        "上下文",
-        "清除",
-        "total",
-        "确认",
-        "状态机"
-      ],
-      "categories": [
-        "Utility",
-        "Fun",
-        "Management"
-      ],
-      "repository_url": "https://github.com/xuqian13/context_clear_plugin",
-      "dependencies": [],
-      "python_dependencies": [],
-      "config_file": "config.toml",
-      "enabled": true,
+      "sdk": {
+        "min_version": "2.0.0",
+        "max_version": "3.0.0"
+      },
+      "capabilities": [],
+      "i18n": {
+        "default_locale": "zh-CN",
+        "locales": [
+          "zh-CN",
+          "en-US"
+        ]
+      },
       "components": {
         "commands": [
           {
