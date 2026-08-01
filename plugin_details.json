@@ -1482,7 +1482,7 @@
     "manifest": {
       "manifest_version": 2,
       "id": "xinxinxin0.bilibili-video-sender",
-      "version": "2.0.9",
+      "version": "2.0.10",
       "name": "麦麦发 B 站视频",
       "description": "让麦麦解析 B 站视频链接并发送，群聊私聊都可用",
       "author": {
@@ -3557,7 +3557,7 @@
     "id": "saberlights.smart_segmentation_plugin",
     "manifest": {
       "manifest_version": 2,
-      "version": "1.0.0",
+      "version": "1.1.0",
       "name": "智能分段插件 (Smart Segmentation Plugin)",
       "description": "使用 LLM 智能切分回复文本，在语义自然的地方切分，保持原文内容不变，让回复更加灵活自然。",
       "author": {
