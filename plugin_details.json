@@ -1706,43 +1706,6 @@
     }
   },
   {
-    "id": "Unreal.My_Fucked_turtle_soup",
-    "manifest": {
-      "manifest_version": 1,
-      "name": "海龟汤",
-      "version": "1.6.2",
-      "description": "支持游戏模式的海龟汤题目生成和互动。0.10+请移步 https://github.com/Heximiao/turtlesoup_plugin",
-      "author": {
-        "name": "Unreal"
-      },
-      "license": "MIT",
-      "keywords": [
-        "海龟汤",
-        "推理游戏",
-        "AI",
-        "娱乐"
-      ],
-      "categories": [
-        "Entertainment & Interaction"
-      ],
-      "host_application": {
-        "min_version": "0.10.0"
-      },
-      "homepage_url": "https://github.com/svila-ylym/My_Fucked_turtle_soup-Maimbot",
-      "repository_url": "https://github.com/svila-ylym/My_Fucked_turtle_soup-Maimbot",
-      "plugin_info": {
-        "plugin_type": "general",
-        "components": [
-          {
-            "type": "command",
-            "name": "HaiTurtleSoupCommand",
-            "description": "处理 /hgt 命令，生成海龟汤题目或进行游戏互动。用法: /hgt [问题|提示|整理线索|猜谜|退出|帮助|汤面|揭秘]"
-          }
-        ]
-      }
-    }
-  },
-  {
     "id": "Windpicker-owo.maibot-screen-monitor-plugin",
     "manifest": {
       "manifest_version": 1,
@@ -1900,43 +1863,6 @@
     }
   },
   {
-    "id": "Unreal.My_Fucked_100_People",
-    "manifest": {
-      "manifest_version": 1,
-      "name": "MY_FUCKED_100_PEOPLE",
-      "version": "1.3.3",
-      "description": "群U群U，让我c一下，就一下，好不好嘛~",
-      "author": {
-        "name": "Unreal",
-        "url": "https://github.com/svila-ylym"
-      },
-      "license": "MIT",
-      "keywords": [
-        "qq",
-        "娱乐",
-        "哈基米",
-        "command"
-      ],
-      "categories": [
-        "Entertainment & Interaction"
-      ],
-      "host_application": {
-        "min_version": "0.10.0"
-      },
-      "plugin_info": {
-        "is_built_in": false,
-        "plugin_type": "general",
-        "components": [
-          {
-            "type": "command",
-            "name": "CcbLoadQQCommand",
-            "description": "懂的都懂"
-          }
-        ]
-      }
-    }
-  },
-  {
     "id": "Ghost-chu.maiplug_message_react",
     "manifest": {
       "manifest_version": 1,
@@ -1976,116 +1902,6 @@
         ],
         "features": [
           "消息反应表情功能"
-        ]
-      }
-    }
-  },
-  {
-    "id": "Unreal.World_War_Simulator",
-    "manifest": {
-      "manifest_version": 1,
-      "name": "World War Simulator",
-      "version": "1.1.0",
-      "description": "“丞相，这一次还会败吗” - 一个战争的插件，玩家可以加入国家、战斗、结盟、拥有军衔和领土。使用此插件前需要阅读README",
-      "author": {
-        "name": "Unreal and 何夕",
-        "url": "https://github.com/svila-ylym"
-      },
-      "license": "GPLv3",
-      "keywords": [
-        "game",
-        "world war",
-        "simulation",
-        "nation",
-        "war",
-        "alliance",
-        "strategy"
-      ],
-      "categories": [
-        "Entertainment & Interaction"
-      ],
-      "homepage_url": "https://github.com/svila-ylym/World_War_Simulator",
-      "repository_url": "https://github.com/svila-ylym/World_War_Simulator",
-      "host_application": {
-        "min_version": "0.10.0"
-      },
-      "plugin_info": {
-        "components": [
-          {
-            "type": "command",
-            "name": "join_command",
-            "description": "加入或创建一个国家"
-          },
-          {
-            "type": "command",
-            "name": "my_command",
-            "description": "查看自己的信息"
-          },
-          {
-            "type": "command",
-            "name": "friends_command",
-            "description": "查看当前的友军列表"
-          },
-          {
-            "type": "command",
-            "name": "pvp_command",
-            "description": "对指定国家发起战斗"
-          },
-          {
-            "type": "command",
-            "name": "conquer_command",
-            "description": "对指定国家发起掠夺领土"
-          },
-          {
-            "type": "command",
-            "name": "ally_command",
-            "description": "与指定国家结盟"
-          },
-          {
-            "type": "command",
-            "name": "withdraw_command",
-            "description": "解除与指定国家的盟友关系"
-          },
-          {
-            "type": "command",
-            "name": "deploy_command",
-            "description": "在自己的领土上驻军"
-          },
-          {
-            "type": "command",
-            "name": "transfer_command",
-            "description": "(领袖) 将国家兵力转移给同国玩家"
-          },
-          {
-            "type": "command",
-            "name": "appoint_command",
-            "description": "(领袖) 任命官职"
-          },
-          {
-            "type": "command",
-            "name": "set_ideology_command",
-            "description": "(领袖) 设置国家制度"
-          },
-          {
-            "type": "command",
-            "name": "help_command",
-            "description": "显示帮助菜单"
-          },
-          {
-            "type": "command",
-            "name": "nation_command",
-            "description": "查看自己国家的信息"
-          },
-          {
-            "type": "command",
-            "name": "world_command",
-            "description": "查看世界现状"
-          },
-          {
-            "type": "action",
-            "name": "random_event_action",
-            "description": "触发随机世界事件"
-          }
         ]
       }
     }
