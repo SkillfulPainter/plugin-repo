@@ -2308,7 +2308,7 @@
     "manifest": {
       "manifest_version": 2,
       "id": "namchengwuqiu.gemini_drawer",
-      "version": "1.13.0",
+      "version": "1.14.1",
       "name": "Gemini 绘图",
       "description": "使用 Google Gemini API或着其他第三方平台提供的绘图服务，根据图片和提示词生成新图片。（现已支持视频生成）",
       "author": {
@@ -2680,7 +2680,7 @@
     "id": "TAIY2020.group_muter_plugin",
     "manifest": {
       "manifest_version": 2,
-      "version": "2.6.2",
+      "version": "2.7.0",
       "name": "群聊静音插件 | GroupMuter Plugin",
       "description": "一个允许管理员通过聊天命令、或麦麦主动让指定群聊临时进入“静音状态”（闭嘴）的群组管理插件。",
       "author": {
@@ -2709,8 +2709,12 @@
         "frequency.set_adjust",
         "chat.get_group_streams",
         "api.call",
+        "config.get",
+        "component.enable",
+        "component.disable",
         "llm.generate",
-        "message.get_recent"
+        "message.get_recent",
+        "maisaka.context.append"
       ],
       "i18n": {
         "default_locale": "zh-CN",
